@@ -1,4 +1,4 @@
-# Latest Netdiscover binary
+# Latest Netdiscover Binary
 
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/netdiscover)](https://artifacthub.io/packages/search?repo=netdiscover)
 
@@ -6,8 +6,14 @@ This image contains the current netdiscover.
 
 ## Installation
 
-* For CI/Image install: `COPY --from=ghcr.io/simonwoodtli/netdiscover:latest /bin/netdiscover /where/You/Want`
-* For local install:
+### CI/Image Install
+
+```
+COPY --from=ghcr.io/simonwoodtli/netdiscover:latest /bin/netdiscover /where/You/Want
+```
+
+### Local install
+
 1. Build image: 
 
 ```
@@ -18,5 +24,9 @@ COPY --from=ghcr.io/simonwoodtli/netdiscover:latest /bin/netdiscover
 EOF
 ```
 
-2. Copy netdiscover to host: `docker run --rm -v $HOME/.local/bin:/mnt alpine-netdiscover sh -c "install
-/bin/netdiscover /mnt"`
+2. Copy netdiscover to your host: 
+
+```
+docker run --rm -v $HOME/.local/bin:/mnt alpine-netdiscover sh -c "install
+/bin/netdiscover /mnt"
+```
