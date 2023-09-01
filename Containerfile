@@ -7,4 +7,4 @@ RUN /tmp/build.sh
 
 FROM scratch
 # Copy binary
-COPY --from=builder /usr/local/bin/netdiscover /bin/netdiscover
+COPY --from=builder /usr/local/sbin/netdiscover /bin/netdiscover
