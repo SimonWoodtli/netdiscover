@@ -31,3 +31,7 @@ EOF
 ```
 docker run --rm -v $HOME/.local/bin:/mnt alpine-netdiscover sh -c "install /bin/netdiscover /mnt"
 ```
+
+Related:
+
+* https://github.com/netdiscover-scanner/netdiscover 
