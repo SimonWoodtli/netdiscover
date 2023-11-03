@@ -1,0 +1,7 @@
+# Artifact Hub repository metadata file
+# See: https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-repo.yml
+
+repositoryID: 1aafc165-e556-4b4c-b171-5a5b7c7b9917
+owners:
+  - name: SimonWoodtli
+    email: xnasero@posteo.net
